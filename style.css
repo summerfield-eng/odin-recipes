@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --aside-width: 200px;
+}
+body {
+  background-color: rgba(220, 220, 220, 0.3);
+  height: 100vh;
+}
+nav {
+  background-color: antiquewhite;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.main-aside-container {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 66px);
+  border: 1px solid red;
+  overflow-y: hidden;
+}
+
+aside {
+  display: flex;
+  height: auto;
+  width: var(--aside-width);
+  border: 1px solid black;
+  background-color: wheat;
+  padding: 6px;
+}
+
+main {
+  padding: 10px;
+  width: calc(100vw - var(--aside-width));
+  margin-left: 20px;
+  overflow-y: auto;
+}
+ul,
+ol {
+  padding: 20px;
+}
+ul .recipe {
+  padding: 5px;
+  list-style: none;
+}
+
+li.recipe:hover {
+  background-color: lightcoral;
+}
